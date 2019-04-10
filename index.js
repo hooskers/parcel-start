@@ -8,13 +8,17 @@ const style = css`
 `;
 
 const App = () => {
-  const [name, setName] = useState('DEFAULT');
+  const defaultName = 'DEFAULT';
+  const [name, setName] = useState(defaultName);
 
   return (
     <div className="App" css={style}>
       <h1>{`Hi there, ${name}!!!`}</h1>
       <label htmlFor="actual-name">Actual name: </label>
-      <input id="actual-name" onChange={e => setName(e.target.value)} />
+      <input
+        id="actual-name"
+        onChange={e => setName(e.target.value || defaultName)}
+      />
     </div>
   );
 };
