@@ -12,7 +12,7 @@ const App = () => {
 
   return (
     <div className="App" css={style}>
-      <h1>{`Hi there ${name}!!!`}</h1>
+      <h1>{`Hi there, ${name}!!!`}</h1>
       <label htmlFor="actual-name">Actual name: </label>
       <input id="actual-name" onChange={e => setName(e.target.value)} />
     </div>
