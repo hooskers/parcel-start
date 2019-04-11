@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import ReactDOM from 'react-dom';
 import { jsx, css } from '@emotion/core';
+import '@babel/polyfill';
 
 const style = css`
   color: hotpink;
