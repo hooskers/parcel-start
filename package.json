@@ -8,7 +8,6 @@
     "build": "cross-env NODE_ENV=production parcel build index.html --no-minify --public-url"
   },
   "dependencies": {
-    "@babel/polyfill": "^7.7.0",
     "@emotion/core": "^10.0.22",
     "@emotion/css": "^10.0.22",
     "react": "^16.12.0",
